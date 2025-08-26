@@ -1,0 +1,335 @@
+/* Start Root Variables */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+    --white-color: #fff;
+    --text-color: #333;
+    --border-radius: 5px;
+    --padding: 20px;
+    --margin: 20px;
+    --transition: 0.3s;
+    --font-size: 18px;
+}
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+/* End Root Variables */
+/* Start Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: var(--border-radius);
+}
+/* End Container */
+/* Start Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: var(--padding);
+    border-bottom: 1px solid var(--white-color);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.nav {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding-top: var(--padding);
+    border-top: 1px solid var(--white-color);
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+.nav-list li a {
+    font-size: var(--font-size);
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding: var(--padding);
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border var(--transition);
+    -moz-transition: border var(--transition);
+    -ms-transition: border var(--transition);
+    -o-transition: border var(--transition);
+    transition: border var(--transition);
+}
+.nav-list li a:hover {
+    border: 2px solid var(--white-color);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius: 5px;
+}
+/* End Header */
+/* Start About Section */
+.about {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+}
+.profile-pic {
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+.section-title {
+    text-transform: uppercase;
+    margin:0 auto 40px;
+    border:2px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+}
+.section-title::after {
+    content: "";
+    height: 12px;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    border-radius:50%;
+    width: 12px;
+}
+.section-title::before {
+    content: "";
+    height: 12px;
+    background-color: var(--primary-color);
+    position: absolute;
+    border-radius:50%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+}
+.section-title::before {
+    left: -30px;
+}
+.section-title::after {
+    right: -30px;
+}
+.section-title:hover::before {
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+    animation: left-move 0.5s linear forwards;
+}
+.section-title:hover::after {
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+    -webkit-animation: right-move 0.5s linear forwards;
+}
+.section-title:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    transition-delay: 0.5s;
+}
+.section-content {
+    font-size: var(--font-size);
+}
+/* End Projects About  */
+/* Start Social Media */
+.link-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.link-social a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.link-social a:hover {
+    color: #757575
+}
+/* End Social Media */
+/* Start Projects Section */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.project-content {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.project-list a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.project-list a:hover {
+    color: #757575;
+}
+.projects-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-bottom: 10px;
+}
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.button-projects {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size);
+}
+.button-projects:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+/* End Projects Button */
+/* Start Skills Section */
+.skills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+}
+.skill-name {
+    font-weight: bold;
+}
+.skill-level {
+    font-style: italic;
+}
+/* End Skills Section */
+/* Start Testimonials */
+.testimonial {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.testimonial-author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* End Testimonials */
+/* Start Contact */
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+.link {
+    margin: 10px 0;
+    font-size: var(--font-size);
+}
+.link a {
+    color: var(--primary-color);
+}
+.link a:hover {
+    color: #757575;
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+}
+/* Start Animation Skills */
+@keyframes left-move {
+    50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100%{
+        left: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        width: 50%;
+        height: 100%;
+}
+}
+@keyframes right-move {
+    50% {
+        right: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100%{
+        right: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        width: 50%;
+        height: 100%;
+}
+}
+/* End Animation Projects */
