@@ -81,6 +81,13 @@ header {
     -o-border-radius:5px;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+}
 /* End Header */
 /* Start About Section */
 .about {
