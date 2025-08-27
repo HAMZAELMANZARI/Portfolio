@@ -176,6 +176,9 @@ header {
     margin-top: 20px;
 }
 .link-social a {
+    padding: 10px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;

@@ -32,3 +32,14 @@ function toggleDarkMode() {
     body.classList.toggle('dark-mode');
 }
 document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
+
+// function social Links open hyperlinks
+document.getElementById("social-links").addEventListener("mouseover",function(){
+    this.style.display = "block";
+    this.addEventListener("mouseout", function() {
+        this.style.display = "none";
+    });
+    this.addEventListener("click", function() {
+        window.open(this.getAttribute("data-url"), "_blank");
+    });
+})
