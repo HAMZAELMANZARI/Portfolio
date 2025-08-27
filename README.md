@@ -1,0 +1,2 @@
+# Welcome To My Portfolio 
+Hi, I'm Hamza El Manzari and I'm a web developer. I specialize in creating dynamic and responsive web applications. I have a passion for coding and love to learn new technologies. 
